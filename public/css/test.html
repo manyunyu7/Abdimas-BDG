@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html
+        lang="en">
+<head>
+    <meta
+            charset="utf-8">
+    <meta
+            http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+            name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" maximum-scale=1,
+            user-scalable=no'>
+    <meta
+            name="author" content="SIBIMA Developer Team">
+    <meta
+            property="og:title" content="SIBIMA - Sistem Informasi Badan Mentoring"/>
+    <meta
+            property="og:site_name" content="SIBIMA">
+    <meta
+            property="og:url" content="https://sibima.badanmentoring.org"/>
+    <meta
+            property="og:type" content="website">
+    <meta
+            property="og:locale" content="en_US">
+    <meta
+            property="og:image" content="https://sibima.badanmentoring.org/img/logo/logo_grey_min.png"/>
+    <meta
+            property="og:image:secure_url" content="https://sibima.badanmentoring.org/img/logo/logo_grey_min.png">
+    <meta
+            property="og:description" content="Sistem Informasi Badan Mentoring MPAI Telkom University"/>
+    <link
+            rel="shortcut icon" href="https://sibima.badanmentoring.org/img/favicon.png">
+    <title>Login | SIBIMA Badan Mentoring</title>
+    <link
+            href="https://sibima.badanmentoring.org/bower_components/fontawesome/css/font-awesome.min.css"
+            rel="stylesheet">
+    <link
+            href="https://sibima.badanmentoring.org/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet">
+    <link
+            href="https://sibima.badanmentoring.org/css/style-coreui.min.css" rel="stylesheet">
+    <link
+            href="https://sibima.badanmentoring.org/css/bima.css" rel="stylesheet">
+    <style>body {
+        background-size: cover
+    }
+
+    .background-image {
+        background-image: url('https://image.freepik.com/free-vector/mandala-illustration_53876-81805.jpg');
+        margin: 0;
+        background-repeat: no-repeat;
+        position: fixed;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 0;
+        width: 100% !important;
+        height: 100% !important;
+        display: block;
+        background-position: center;
+        background-size: cover;
+        -webkit-filter: blur(2px);
+        -moz-filter: blur(2px);
+        -o-filter: blur(2px);
+        -ms-filter: blur(2px);
+        filter: blur(2px)
+    }
+
+    .login-card {
+        border: 2px solid #1C6EA4;
+        border-radius: 25px
+    }
+
+    .bg-text {
+        background-color: #FFF;
+        background-color: rgba(255, 255, 255, 0.4);
+        color: white !important;
+        font-weight: bold;
+        border: 1px solid #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 100%;
+        text-align: center
+    }
+
+    footer {
+        background-color: transparent !important;
+        border: none !important
+    }</style>
+    <script>(function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics_debug.js', 'ga');
+    ga('create', 'UA-XXXXXXXX-1', {'cookieDomain': 'none'}, 't0');
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');</script>
+</head>
+<body>
+<div
+        class="background-image"></div>
+<div
+        id="particles-js"></div>
+<div
+        class="container">
+    <div
+            class="row">
+        <div
+                class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-10 offset-xs-1 vamiddle">
+            <div
+                    class="login-card bg-text">
+                <div
+                        class="card-block">
+                    <div
+                            class="form-box" id="login-box">
+                        <div
+                                id="bima-look">
+                            <div
+                                    id="head-look"></div>
+                            <div
+                                    id="hand-look"></div>
+                        </div>
+                        <h1 class="text-xs-center mt-3 mb-2" style="color: #464646; font-family:'gloss'; ">Sibima
+                            FT</h1><h5 class="text-xs-center"
+                                       style="color: #464646; font-family:'Quicksand'; margin-bottom:20px;">
+                        Sistem Informasi Badan Mentoring<br/>Telkom University</h5>
+                        <form
+                                class="form" action="https://sibima.badanmentoring.org/login" method="post">
+                            <input
+                                    type="hidden" name="_token" value="0IyPmEIE0IAJtYLtlYReGcfsGz80zkFFnNY5d6lM">
+                            <div
+                                    class="input-group mb-1">
+<span
+        class="input-group-addon"><i
+        class="fa fa-user"></i></span>
+                                <input
+                                        type="text" class="form-control" style="font-family: Quicksand" name="nim"
+                                        placeholder="NIM" required></div>
+                            <div
+                                    class="input-group mb-2">
+<span
+        class="input-group-addon"><i
+        class="fa fa-lock"></i></span>
+                                <input
+                                        type="password" class="form-control" style="font-family: Quicksand"
+                                        name="password" placeholder="Password"
+                                        required></div>
+                            <div
+                                    class="row">
+                                <div
+                                        class="col-lg-6 col-md-12 col-sm-12">
+                                    <button
+                                            style="font-family: Quicksand" type="submit" class="btn btn-primary  px-2">
+                                        Login
+                                    </button>
+                                </div>
+                                <div
+                                        class="col-lg-6 col-md-12 col-sm-12 ">
+                                    <button
+                                            style="font-family: Quicksand" type="button"
+                                            onclick="swal('Hubungi OA Badan Mentoring Fakultas Teknik')"
+                                            class="btn btn-link px-0 float-md-right">Forgot password?
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                    class="row">
+                                <br>
+                                <p
+                                        style="font-family: Quicksand; color: black" class=""><strong>SIBIMA tersedia
+                                    dalam versi Android <br> (beta version)</strong></p>
+                                <a
+                                        style="font-family: Quicksand" href="https://feylaboratory.xyz/sibima/">Download
+                                    SIBIMA MOBILE</a></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer
+            class="footer">
+<span
+        class="text-left m-r-1">
+Badan Mentoring MPAI Tel-U © 2021
+</span>
+    </footer>
+</div>
+<script src="https://sibima.badanmentoring.org/bower_components/jquery/dist/jquery.min.js"></script>
+<script>function verticalAlignMiddle() {
+    var bodyHeight = $(window).height();
+    var formHeight = $('.vamiddle').height();
+    var marginTop = (bodyHeight / 2) - (formHeight / 2);
+    if (marginTop > 0) {
+        $('.vamiddle').css('margin-top', marginTop);
+    }
+}
+
+verticalAlignMiddle();
+$(window).bind('resize', verticalAlignMiddle);</script>
+<script src="https://sibima.badanmentoring.org/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://sibima.badanmentoring.org/bower_components/pace/pace.min.js"></script>
+<script src="https://sibima.badanmentoring.org/bower_components/particles.js/particles.min.js"></script>
+<script src="https://sibima.badanmentoring.org/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+<script>particlesJS.load('particles-js', 'https://sibima.badanmentoring.org/config/particlesjs-config.json', function () {
+    console.log('callback - particles.js config loaded');
+});</script>
+</body>
+</html>

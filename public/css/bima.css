@@ -1,0 +1,399 @@
+/*======= Background Image =======*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+body {
+    /* background: url('https://image.freepik.com/free-photo/islamic-decoration-background-with-crescent-mosque-arabic-lantern_257995-523.jpg') no-repeat; */
+    background: url('https://images.pexels.com/photos/654/clouds-cloudy-agriculture-farm.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat;
+    /*background-color: #FBFBFA;*/
+    background-position: right bottom;
+    background-size: auto;
+    background-attachment: fixed;
+    font-family: 'Quicksand' !important;
+}
+
+/*Body Styling */
+
+body {
+    font-family: 'Open Sans', San-Serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    margin-top:80px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* Boostrap Buttons Styling */
+
+.btn-default {
+    font-family: Raleway-SemiBold;
+    font-size: 13px;
+    color: rgba(108, 88, 179, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(108, 89, 179, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-default:hover {
+    color: #FFF;
+    background: rgba(108, 88, 179, 0.75);
+    border: 2px solid rgba(108, 89, 179, 0.75);
+}
+
+.btn-primary {
+    font-family: Raleway-SemiBold;
+    font-size: 13px;
+    color: rgba(58, 133, 191, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(58, 133, 191, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-primary:hover {
+    color: #FFF;
+    background: rgba(58, 133, 191, 0.75);
+    border: 2px solid rgba(58, 133, 191, 0.75);
+}
+
+.btn-success {
+    font-family: Raleway-SemiBold;
+    font-size: 13px;
+    color: rgba(103, 192, 103, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(103, 192, 103, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-success:hover {
+    color: #FFF;
+    background: rgb(103, 192, 103, 0.75);
+    border: 2px solid rgb(103, 192, 103, 0.75);
+}
+
+.btn-info {
+    font-family: Raleway-SemiBold;
+    font-size: 13px;
+    color: rgba(91, 192, 222, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(91, 192, 222, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-info:hover {
+    color: #FFF;
+    background: rgba(91, 192, 222, 0.75);
+    border: 2px solid rgba(91, 192, 222, 0.75);
+}
+
+.btn-warning {
+    font-family: Raleway-SemiBold;
+    font-size: 13px;
+    color: rgba(240, 173, 78, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(240, 173, 78, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-warning:hover {
+    color: #FFF;
+    background: rgb(240, 173, 78, 0.75);
+    border: 2px solid rgba(240, 173, 78, 0.75);
+}
+
+.btn-danger {
+    font-family: Raleway-SemiBold;
+    font-size: 13px;
+    color: rgba(217, 83, 78, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(217, 83, 78, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-danger:hover {
+    color: #FFF;
+    background: rgba(217, 83, 78, 0.75);
+    border: 2px solid rgba(217, 83, 78, 0.75);
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
+
+/*======= Login Page =======*/
+@font-face {
+    font-family: 'glober';
+    src: url('../fonts/Glober SemiBold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'glober thin';
+    src: url('../fonts/Glober Thin.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'norwester';
+    src: url('../fonts/norwester.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gloss';
+    src: url('../fonts/gloss.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100% !important;
+    height: 98% !important;
+}
+
+#bima-look { position: absolute; left: 0; right: 0; margin: auto; top: -75px; text-align: center;}
+#bima-look #hand-look { background: url('../img/bima/login_hand.png') no-repeat; position: absolute; top:66px; left: 0; right: 0; margin: auto; width: 209px; height: 9px; transition: .01s all ease-in-out;}
+#bima-look #head-look { background: url('../img/bima/login_head.png') no-repeat; top:75px; position: absolute; left: 0; right: 0; margin: auto; width: 119px; height: 0px; transition: .5s all ease-in-out;}
+#login-box:hover #bima-look #hand-look { height: 31px;}
+#login-box:hover #bima-look #head-look{top: 0px; height: 74px;}
+
+/* ======= Dashboard Custom Style =======*/
+
+main.main {
+    padding-top: 80px !important;
+}
+
+/* Table SM Vertical Alignment */
+.table > tbody > tr > td {
+    vertical-align: middle !important;
+}
+
+/* Header Style */
+.navbar {
+    border-radius: 0px;
+}
+
+nav.breadcrumb {
+    border: 1px solid #DEDEDE;
+}
+
+header.navbar a.navbar-brand {
+	/* Logo PNG Size */
+    background-size: 120px;
+    background-image: url(../img/logo/sibima_min_1.png);
+    background-repeat: no-repeat;
+    width: 215px;
+}
+
+
+
+a.navbar-toggler {
+    height: 55px;
+}
+
+.nav-profile {
+    margin-right: 20px;
+}
+
+ul.hidden-md-down > li.nav-item {
+    border-width: 0px 1px;
+    border-style: solid;
+    border-color: #dedede;
+}
+
+.login-blurred{
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+@media screen and (max-width: 991px) {
+    /*main.main { padding-top: 100px !important;  }*/
+    .nav-profile {  margin-top: -57px;  }
+}
+
+/* Override Background Table Stripped and Hover */
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #f1f4f6; }
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #e1e4e6; }
+
+.table {
+    margin-bottom: 5px;
+}
+/* Alert Margin Bottom*/
+.alert {
+    margin-bottom: 1.5rem;
+}
+
+/*======= Sidebar Style =======*/
+.nav-padding {
+    margin-left: 10px;
+}
+
+.sidebar {
+    z-index: 5;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+    background-color: #263238 !important;
+}
+
+/*======= Footer Sytle =======*/
+footer {
+    z-index: 5;
+}
+
+.idch-logo {
+    width: 100px;
+    padding-left: 10px;
+}
+
+.text-left {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.float-xs-right {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.footer.footer {
+    height: 40px !important;
+    /*padding: 0px;*/
+    line-height: 40px !important;
+    border-top: solid 1px #c4c2c8;
+    background: #ffffff;
+}
+
+.core-logo {
+    width: 100px;
+    padding-left: 5px;
+}
+
+.cd-scrolling-bg {
+    min-height: 100%;
+}
+
+
+/*======= Profile Page =======*/
+img.profile-user {
+    padding : 20px;
+}
+
+/* Card New Style */
+.card-block {
+    padding-left: 25px ;
+    padding-right: 25px ;
+}
+
+.card-header-inverse {
+    background : #ffffff;
+    border-bottom:1px solid #dedede;
+    color: inherit;
+}
+
+.card-actions {
+    height: 100%;
+}
+
+.btn-minimize {
+    margin: .75rem 0rem;
+    height: 58px;
+}
+
+.btn-minimize > i {
+    margin-top : 10px;
+}
+
+.title-collapse {
+    font-size : 1.4rem;
+    margin-bottom: 0px;
+    color: #263238;
+}
+
+.m-b-0 {  margin-bottom: 0rem !important;  }
+.m-b-1 {  margin-bottom: 1rem !important;  }
+.m-b-2 {  margin-bottom: 20px !important;  }
+.m-r-1 {  margin-right: 10px; }
+
+/*======= About BIMA =======*/
+
+.team-member {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid white;
+}
+.team-member h4 {
+
+    margin-bottom: 0;
+    text-transform: none;
+}
+.circle-image{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    display:block;
+
+
+}
+
+/* Profile User */
+.profile-user {
+    height: 225px;
+    padding-bottom: 10px !important;
+}
+
+
+/* Table Kelompok */
+.input-group-head {
+    width: 120px;
+    color: #263238;
+    background-color: #fff;
+    border: 1px solid #b0bec5;
+}
+
+.form-head {
+    border: 1px solid #b0bec5;
+    z-index: 0 !important;
+
+}
+

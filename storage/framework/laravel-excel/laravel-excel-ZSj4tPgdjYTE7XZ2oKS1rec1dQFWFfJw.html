@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Daily Mutaba'ah</title>
+    <!-- Custom CSS -->
+    <link href="http://127.0.0.1:7000/bootstrap_ui/assets/extra-libs/c3/c3.min.css" rel="stylesheet">
+    <link href="http://127.0.0.1:7000/bootstrap_ui/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="http://127.0.0.1:7000/bootstrap_ui/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css"
+        rel="stylesheet" />
+        
+     <!-- Toggle -->
+     <link href="http://127.0.0.1:7000/bootstrap_ui/assets/libs/toggle_switch/dist/css/component-custom-switch.min.css" rel="stylesheet">
+
+    <link href="http://127.0.0.1:7000/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet">
+    <link href="http://127.0.0.1:7000/bower_components/bootstrap-toggle/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+    
+    <!-- Custom CSS -->
+    <link href="http://127.0.0.1:7000/bootstrap_ui/dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        
+                    <header class="topbar" data-navbarbg="skin6">
+    <nav class="navbar top-navbar navbar-expand-md">
+        <div class="navbar-header" data-logobg="skin6">
+            <!-- This is for the sidebar toggle which is visible on mobile only -->
+            <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                    class="ti-menu ti-close"></i></a>
+            <!-- ============================================================== -->
+            <!-- Logo -->
+            <!-- ============================================================== -->
+            <div class="navbar-brand">
+                <!-- Logo icon -->
+                <a href="index.html">
+                    <b class="logo-icon">
+                        <!-- Dark Logo icon -->
+                        <img height="50px" src="http://127.0.0.1:7000/bootstrap_ui/assets/images/albinaa.png" alt="homepage"
+                            class="dark-logo" />
+                    </b>
+                    <!--End Logo icon -->
+                    <!-- Logo text -->
+                    <span class="logo-text">
+                        <!-- dark Logo text -->
+                        <img  height="35px" src="http://127.0.0.1:7000/bootstrap_ui/assets/images/albinaa_long.png" alt="homepage"
+                            class="dark-logo" />
+                        
+                    </span>
+                </a>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Logo -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Toggle which is visible on mobile only -->
+            <!-- ============================================================== -->
+            <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Logo -->
+        <!-- ============================================================== -->
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <!-- ============================================================== -->
+            <!-- toggle and nav items -->
+            <!-- ============================================================== -->
+            <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
+                <!-- Notification -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle pl-md-3 position-relative" href="javascript:void(0)" id="bell"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span><i data-feather="bell" class="svg-icon"></i></span>
+                        <span class="badge badge-primary notify-no rounded-circle">5</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left mailbox animated bounceInDown">
+                        <ul class="list-style-none">
+                            <li>
+                                <div class="message-center notifications position-relative">
+                                    <!-- Message -->
+                                    <a href="javascript:void(0)"
+                                        class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                        <div class="btn btn-danger rounded-circle btn-circle"><i data-feather="airplay"
+                                                class="text-white"></i></div>
+                                        <div class="w-75 d-inline-block v-middle pl-2">
+                                            <h6 class="message-title mb-0 mt-1">Luanch Admin</h6>
+                                            <span class="font-12 text-nowrap d-block text-muted">Just see
+                                                the my new
+                                                admin!</span>
+                                            <span class="font-12 text-nowrap d-block text-muted">9:30 AM</span>
+                                        </div>
+                                    </a>
+                                    <!-- Message -->
+                                    <a href="javascript:void(0)"
+                                        class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                        <span class="btn btn-success text-white rounded-circle btn-circle"><i
+                                                data-feather="calendar" class="text-white"></i></span>
+                                        <div class="w-75 d-inline-block v-middle pl-2">
+                                            <h6 class="message-title mb-0 mt-1">Event today</h6>
+                                            <span class="font-12 text-nowrap d-block text-muted text-truncate">Just
+                                                a reminder that you have event</span>
+                                            <span class="font-12 text-nowrap d-block text-muted">9:10 AM</span>
+                                        </div>
+                                    </a>
+                                    <!-- Message -->
+                                    <a href="javascript:void(0)"
+                                        class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                        <span class="btn btn-info rounded-circle btn-circle"><i data-feather="settings"
+                                                class="text-white"></i></span>
+                                        <div class="w-75 d-inline-block v-middle pl-2">
+                                            <h6 class="message-title mb-0 mt-1">Settings</h6>
+                                            <span class="font-12 text-nowrap d-block text-muted text-truncate">You
+                                                can customize this template
+                                                as you want</span>
+                                            <span class="font-12 text-nowrap d-block text-muted">9:08 AM</span>
+                                        </div>
+                                    </a>
+                                    <!-- Message -->
+                                    <a href="javascript:void(0)"
+                                        class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                        <span class="btn btn-primary rounded-circle btn-circle"><i data-feather="box"
+                                                class="text-white"></i></span>
+                                        <div class="w-75 d-inline-block v-middle pl-2">
+                                            <h6 class="message-title mb-0 mt-1">Pavan kumar</h6> <span
+                                                class="font-12 text-nowrap d-block text-muted">Just
+                                                see the my admin!</span>
+                                            <span class="font-12 text-nowrap d-block text-muted">9:02 AM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="nav-link pt-3 text-center text-dark" href="javascript:void(0);">
+                                    <strong>Check all notifications</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- End Notification -->
+                <!-- ============================================================== -->
+                <!-- create new -->
+                <!-- ============================================================== -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i data-feather="settings" class="svg-icon"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                    <a class="nav-link" href="javascript:void(0)">
+                        <div class="customize-input">
+                            <select class="custom-select form-control bg-white custom-radius custom-shadow border-0">
+                                <option selected>EN</option>
+                                <option value="1">AB</option>
+                                <option value="2">AK</option>
+                                <option value="3">BE</option>
+                            </select>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!-- ============================================================== -->
+            <!-- Right side toggle and nav items -->
+            <!-- ============================================================== -->
+            <ul class="navbar-nav float-right">
+                <!-- ============================================================== -->
+                <!-- Search -->
+                <!-- ============================================================== -->
+                <li class="nav-item d-none d-md-block">
+                    <a class="nav-link" href="javascript:void(0)">
+                        <form>
+                            <div class="customize-input">
+                                <input class="form-control custom-shadow custom-radius border-0 bg-white" type="search"
+                                    placeholder="Search" aria-label="Search">
+                                <i class="form-control-icon" data-feather="search"></i>
+                            </div>
+                        </form>
+                    </a>
+                </li>
+                <!-- ============================================================== -->
+                <!-- User profile and search -->
+                <!-- ============================================================== -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="http://127.0.0.1:7000/bootstrap_ui/assets/images/users/profile-pic.jpg" alt="user"
+                            class="rounded-circle" width="40">
+                        <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span
+                                class="text-dark">Muhammad Razky Febriansyah</span> <i
+                                data-feather="chevron-down" class="svg-icon"></i></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
+                        <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user"
+                                class="svg-icon mr-2 ml-1"></i>
+                            My Profile</a>
+                        <a class="dropdown-item" href="javascript:void(0)"><i data-feather="credit-card"
+                                class="svg-icon mr-2 ml-1"></i>
+                            My Balance</a>
+                        <a class="dropdown-item" href="javascript:void(0)"><i data-feather="mail"
+                                class="svg-icon mr-2 ml-1"></i>
+                            Inbox</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="javascript:void(0)"><i data-feather="settings"
+                                class="svg-icon mr-2 ml-1"></i>
+                            Account Setting</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="http://127.0.0.1:7000/logout" onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                            <i data-feather="power" class="svg-icon mr-2 ml-1"></i>Logout</a>
+                        <form id="logout-form" action="http://127.0.0.1:7000/logout" method="POST" class="d-none">
+                            <input type="hidden" name="_token" value="EuSIgZcOzQQxw6Qw8URkVaKkjG3FezuivedLSJsY">                        </form>
+                        <div class="dropdown-divider"></div>
+                        <div class="pl-4 p-3"><a href="javascript:void(0)" class="btn btn-sm btn-info">View
+                                Profile</a></div>
+                    </div>
+                </li>
+                <!-- ============================================================== -->
+                <!-- User profile and search -->
+                <!-- ============================================================== -->
+            </ul>
+        </div>
+    </nav>
+</header>
+                <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+                            <aside class="left-sidebar" data-sidebarbg="skin6">
+    <!-- Sidebar scroll-->
+    <div class="scroll-sidebar" data-sidebarbg="skin6">
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+                <li class="sidebar-item"><a class="sidebar-link sidebar-link" href="http://127.0.0.1:7000/santri"
+                        aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
+                            class="hide-menu">Dashboard</span></a></li>
+                <li class="list-divider"></li>
+                <li class="nav-small-cap"><span class="hide-menu">Mutabaah</span></li>
+
+                <li class="sidebar-item"><a class="sidebar-link" href="http://127.0.0.1:7000/santri/mutabaah/input"
+                        aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
+                            class="hide-menu">Isi Mutaba'ah
+                        </span></a>
+                </li>
+                <li class="sidebar-item"><a class="sidebar-link" href="http://127.0.0.1:7000/santri/mutabaah/report"
+                        aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
+                            class="hide-menu">Report Mutaba'ah
+                        </span></a>
+                </li>
+
+                <li class="sidebar-item"><a class="sidebar-link" href="http://127.0.0.1:7000/santri/mutabaah/report/all"
+                        aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
+                            class="hide-menu">Seluruh Report
+                        </span></a>
+                </li>
+
+                <li class="list-divider"></li>
+                <li class="nav-small-cap"><span class="hide-menu">Data</span></li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link sidebar-link" href="http://127.0.0.1:7000/admin/data/santri/import"
+                        aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
+                            class="hide-menu">Import Data Santri</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link sidebar-link" href="http://127.0.0.1:7000/admin/data/santri/manage"
+                        aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
+                            class="hide-menu">Manage Data Santri</span>
+                    </a>
+                </li>
+
+
+
+                <li class="list-divider"></li>
+                <li class="nav-small-cap"><span class="hide-menu">Extra</span></li>
+                <li class="sidebar-item"><a class="sidebar-link sidebar-link" href="../../docs/docs.html"
+                        aria-expanded="false"><i data-feather="edit-3" class="feather-icon"></i><span
+                            class="hide-menu">Documentation</span></a></li>
+                <li class="sidebar-item"><a class="sidebar-link sidebar-link" href="authentication-login1.html"
+                        aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span
+                            class="hide-menu">Logout</span></a></li>
+            </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+    </div>
+    <!-- End Sidebar scroll-->
+</aside>
+                <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                    <div class="row">
+        <div class="col-7 align-self-center">
+            <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Mutaba'ah Yaumiyah</h4>
+            <div class="d-flex align-items-center">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb m-0 p-0">
+                        <li class="breadcrumb-item text-muted active" aria-current="page">Mutaba'ah</li>
+                        <li class="breadcrumb-item text-muted" aria-current="page">Input</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="col-5 align-self-center">
+            <div class="customize-input float-right">
+                <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                    <option selected>Aug 19</option>
+                    <option value="1">July 19</option>
+                    <option value="2">Jun 19</option>
+                </select>
+            </div>
+        </div>
+    </div>
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Container fluid  -->
+                <!-- ============================================================== -->
+                    <div class="row">
+        <div class="col-md-12">
+                    </div>
+    </div>
+
+    <div class="row">
+
+
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="text-dark">Laporan Agenda Mutabaah</h1>
+                            <h1 class="text-dark">2021-03-31</h1>
+                            <div class="mt-2 mb-2">
+                                <a href="http://127.0.0.1:7000/santri/getExcel?mutabaah_id=1&amp;santri_id=1673">
+                                    <button type="button" class="btn btn-outline-primary">Kembali</button>
+                                </a>
+
+                            </div>
+                          
+
+                            <ul>
+                                <li>Nama Santri : Muhammad Razky Febriansyah</li>
+                                <li>NISN : 202110142</li>
+                                <li>Kelas : 10E</li>
+                                <li>Asrama : Mina</li>
+                                <li> <strong> Nama Agenda : Mutabaah Harian </strong></li>
+                                <li> <strong> Tanggal : 2021-03-31 </strong></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="table-responsive">
+                        <table id="table_data" class="table table-striped table-bordered no-wrap">
+
+                            <thead>
+                           
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama Kegiatan</th>
+                                    <th>Nilai Asli Kegiatan</th>
+                                    <th>Nilai Siswa</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                                                    <tr>
+                                        <td>1</td>
+                                        <td>Qiyamul Lail</td>
+                                        <td>10</td>
+                                        <td>
+                                            
+                                                                                            0
+                                                                                    </td>
+                                        <td>
+                                            
+                                                                                            <button type="button" class="btn btn-block btn-success btn-rounded"><i
+                                                        class="fas fa-check-circle"></i> Ya</button>
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>2</td>
+                                        <td>Bangun Sebelum Azan Shubuh</td>
+                                        <td>5</td>
+                                        <td>
+                                            
+                                                                                            0
+                                                                                    </td>
+                                        <td>
+                                            
+                                                                                            <button type="button" class="btn btn-block btn-success btn-rounded"><i
+                                                        class="fas fa-check-circle"></i> Ya</button>
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>3</td>
+                                        <td>Membaca Dzikir Pagi</td>
+                                        <td>7</td>
+                                        <td>
+                                                                                            7
+                                            
+                                                                                    </td>
+                                        <td>
+                                                                                            <button type="button" class="btn btn-block btn-danger btn-rounded"><i
+                                                        class="fas fa-times-circle"></i> Tidak Dilakukan</button>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>4</td>
+                                        <td>Membaca Dzikir Petang</td>
+                                        <td>7</td>
+                                        <td>
+                                                                                            7
+                                            
+                                                                                    </td>
+                                        <td>
+                                                                                            <button type="button" class="btn btn-block btn-danger btn-rounded"><i
+                                                        class="fas fa-times-circle"></i> Tidak Dilakukan</button>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>5</td>
+                                        <td>Berpuasa / Shoum</td>
+                                        <td>3</td>
+                                        <td>
+                                                                                            3
+                                            
+                                                                                    </td>
+                                        <td>
+                                                                                            <button type="button" class="btn btn-block btn-danger btn-rounded"><i
+                                                        class="fas fa-times-circle"></i> Tidak Dilakukan</button>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>6</td>
+                                        <td>Sholat Dhuha</td>
+                                        <td>3</td>
+                                        <td>
+                                            
+                                                                                            0
+                                                                                    </td>
+                                        <td>
+                                            
+                                                                                            <button type="button" class="btn btn-block btn-success btn-rounded"><i
+                                                        class="fas fa-check-circle"></i> Ya</button>
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>7</td>
+                                        <td>Sholat Shubuh Tepat Waktu</td>
+                                        <td>7</td>
+                                        <td>
+                                            
+                                                                                            0
+                                                                                    </td>
+                                        <td>
+                                            
+                                                                                            <button type="button" class="btn btn-block btn-success btn-rounded"><i
+                                                        class="fas fa-check-circle"></i> Ya</button>
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>8</td>
+                                        <td>Sholat Dzuhur Tepat Waktu</td>
+                                        <td>7</td>
+                                        <td>
+                                            
+                                                                                            0
+                                                                                    </td>
+                                        <td>
+                                            
+                                                                                            <button type="button" class="btn btn-block btn-success btn-rounded"><i
+                                                        class="fas fa-check-circle"></i> Ya</button>
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>9</td>
+                                        <td>Sholat Ashar Tepat Waktu</td>
+                                        <td>7</td>
+                                        <td>
+                                                                                            7
+                                            
+                                                                                    </td>
+                                        <td>
+                                                                                            <button type="button" class="btn btn-block btn-danger btn-rounded"><i
+                                                        class="fas fa-times-circle"></i> Tidak Dilakukan</button>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>10</td>
+                                        <td>Sholat Maghrib Tepat Waktu</td>
+                                        <td>7</td>
+                                        <td>
+                                                                                            7
+                                            
+                                                                                    </td>
+                                        <td>
+                                                                                            <button type="button" class="btn btn-block btn-danger btn-rounded"><i
+                                                        class="fas fa-times-circle"></i> Tidak Dilakukan</button>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>11</td>
+                                        <td>Sholat Isya Tepat Waktu</td>
+                                        <td>7</td>
+                                        <td>
+                                            
+                                                                                            0
+                                                                                    </td>
+                                        <td>
+                                            
+                                                                                            <button type="button" class="btn btn-block btn-success btn-rounded"><i
+                                                        class="fas fa-check-circle"></i> Ya</button>
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>12</td>
+                                        <td>Tilawah Quran diluar Waktu Halaqoh</td>
+                                        <td>5</td>
+                                        <td>
+                                            
+                                                                                            0
+                                                                                    </td>
+                                        <td>
+                                            
+                                                                                            <button type="button" class="btn btn-block btn-success btn-rounded"><i
+                                                        class="fas fa-check-circle"></i> Ya</button>
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>13</td>
+                                        <td>Birrul Walidain / Membantu Orang Tua</td>
+                                        <td>5</td>
+                                        <td>
+                                                                                            5
+                                            
+                                                                                    </td>
+                                        <td>
+                                                                                            <button type="button" class="btn btn-block btn-danger btn-rounded"><i
+                                                        class="fas fa-times-circle"></i> Tidak Dilakukan</button>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>14</td>
+                                        <td>Membaca Buku-Buku Islam/Pengetahuan</td>
+                                        <td>5</td>
+                                        <td>
+                                            
+                                                                                            0
+                                                                                    </td>
+                                        <td>
+                                            
+                                                                                            <button type="button" class="btn btn-block btn-success btn-rounded"><i
+                                                        class="fas fa-check-circle"></i> Ya</button>
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>15</td>
+                                        <td>Membaca/Menghafalkan Hadits</td>
+                                        <td>5</td>
+                                        <td>
+                                            
+                                                                                            0
+                                                                                    </td>
+                                        <td>
+                                            
+                                                                                            <button type="button" class="btn btn-block btn-success btn-rounded"><i
+                                                        class="fas fa-check-circle"></i> Ya</button>
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>16</td>
+                                        <td>Berolahraga</td>
+                                        <td>5</td>
+                                        <td>
+                                                                                            5
+                                            
+                                                                                    </td>
+                                        <td>
+                                                                                            <button type="button" class="btn btn-block btn-danger btn-rounded"><i
+                                                        class="fas fa-times-circle"></i> Tidak Dilakukan</button>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>17</td>
+                                        <td>Bersedekah</td>
+                                        <td>5</td>
+                                        <td>
+                                                                                            5
+                                            
+                                                                                    </td>
+                                        <td>
+                                                                                            <button type="button" class="btn btn-block btn-danger btn-rounded"><i
+                                                        class="fas fa-times-circle"></i> Tidak Dilakukan</button>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center text-muted">
+                Developed and Programmed by <a href="http://henryaugusta.feylabs.my.id">Henry Augusta</a>.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="http://127.0.0.1:7000/bootstrap_ui/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="http://127.0.0.1:7000/bootstrap_ui/assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="http://127.0.0.1:7000/bootstrap_ui/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- apps -->
+    <script src="http://127.0.0.1:7000/bootstrap_ui/dist/js/app-style-switcher.js"></script>
+    <script src="http://127.0.0.1:7000/bootstrap_ui/dist/js/feather.min.js"></script>
+    <script src="http://127.0.0.1:7000/bootstrap_ui/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js">
+    </script>
+    <script src="http://127.0.0.1:7000/bootstrap_ui/dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="http://127.0.0.1:7000/bootstrap_ui/dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <script src="http://127.0.0.1:7000/bootstrap_ui/assets/extra-libs/c3/d3.min.js"></script>
+    <script src="http://127.0.0.1:7000/bootstrap_ui/assets/extra-libs/c3/c3.min.js"></script>
+    <script src="http://127.0.0.1:7000/bootstrap_ui/assets/libs/chartist/dist/chartist.min.js"></script>
+    <script
+        src="http://127.0.0.1:7000/bootstrap_ui/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js">
+    </script>
+    <script src="http://127.0.0.1:7000/bootstrap_ui/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="http://127.0.0.1:7000/bootstrap_ui/assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js">
+    </script>
+
+    <script src="http://127.0.0.1:7000/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="http://127.0.0.1:7000/bower_components/bootstrap-toggle/js/bootstrap-toggle.min.js" rel="stylesheet">
+
+
+    
+
+
+
+    <script type="text/javascript"
+    src="https://cdn.datatables.net/v/bs4-4.1.1/jszip-2.5.0/dt-1.10.23/b-1.6.5/b-colvis-1.6.5/b-flash-1.6.5/b-html5-1.6.5/b-print-1.6.5/cr-1.5.3/r-2.2.7/sb-1.0.1/sp-1.2.2/datatables.min.js">
+</script>
+<script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js">
+</script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js">
+</script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js">
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        var table = $('#table_data').DataTable({
+            processing: true,
+            serverSide: false,
+            paginate: false,
+            columnDefs: [{
+                orderable: true,
+                targets: 0
+            }],
+            dom: 'lrtipB',
+            "lengthMenu": [
+                [-1],
+                ["All"]
+            ],
+            buttons: [
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+            ],
+
+        });
+
+
+
+
+    });
+
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

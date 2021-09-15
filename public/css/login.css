@@ -1,0 +1,47 @@
+body {
+    background-size: cover;
+}
+.background-image {
+    /*background-image: url('https://images.pexels.com/photos/6462611/pexels-photo-6462611.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');*/
+    /* background-image: url('https://image.freepik.com/free-vector/mandala-illustration_53876-81805.jpg')  ; */
+    background-image: url('https://saran.id/downloadpng/wallpaper/20240316/tahun-baru-di-bandungan-wallpaper-5-tips-liburan-malam-tahun-baru-di-bandung-reservasi-png-preview.jpg')  ;
+    margin: 0;
+    background-repeat: no-repeat;
+    position: fixed;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 0;
+    width:100% !important;
+    height:100% !important;
+    display: block;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+.login-card{
+    border: 2px solid #1C6EA4;
+    border-radius: 25px;
+}
+.bg-text {
+    background-color: #FFFFFf; /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.4); /* Black w/opacity/see-through */
+    color: white !important;
+    font-weight: bold;
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+footer {
+    background-color: transparent !important;
+    border: none !important;
+}

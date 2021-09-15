@@ -1,0 +1,23 @@
+{
+  "name": "Albinaa",
+  "version": "2.0",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.4",
+    "tether": "latest",
+    "jquery": "^3.0.0",
+    "fontawesome": "4.1.0",
+    "pace": "latest",
+    "chart.js": "^2.4.0",
+    "fullcalendar": "^3.0.1",
+    "particles.js": "^2.0.0",
+    "selectize": "^0.12.4",
+    "chained": "^1.0.0",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.43",
+    "datatables.net": "^1.10.12",
+    "roboto-fontface": "^0.6.0",
+    "select2": "^4.0.3",
+    "sweetalert": "^1.1.3",
+    "summernote": "^0.8.2"
+  },
+  "private": true
+}

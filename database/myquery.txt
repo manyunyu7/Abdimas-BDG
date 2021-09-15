@@ -1,0 +1,1 @@
+SELECT a.* , b.name as `g_name`, b.id as `g_id`, b.contact as `g_contact` , b.email as `g_email` from guru b left join kelompok_tahfidz a on a.mentor_id=b.id
